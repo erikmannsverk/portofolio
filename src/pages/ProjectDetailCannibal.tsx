@@ -30,10 +30,20 @@ function ProjectDetailCannibal() {
                     </Typography>
                 </div>
                 
+                <div className='relative max-w-5xl mx-auto border-t border-blue-gray-100 pt-4'>
+                    <div className="flex justify-end">
+                        <Typography as="a" target="_blank" href="https://cannibal.no/" className="opacity-80 transition-opacity hover:opacity-100">
+                            <button className="bg-blue-500 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded">
+                                Link
+                            </button>
+                        </Typography>
+                    </div>
                 
-                <div className="w-full relative max-w-5xl mx-auto border-t border-blue-gray-100 p-4 flex justify-center object-cover h-full sm:h-[480px]">
-                    <img src="/images/canni_final.png"></img>
+                    <div className="w-full relative max-w-5xl mx-auto flex justify-center object-cover h-full sm:h-[480px]">
+                        <img src="/images/canni_final.png"></img>
+                    </div>
                 </div>
+                
                 </div>
             </div>
         </div>

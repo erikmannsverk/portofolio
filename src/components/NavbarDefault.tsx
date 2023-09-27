@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import {
-  MobileNav,
   IconButton,
   Avatar,
+  Collapse,
 } from "@material-tailwind/react";
 import LinkNav from "./LinkNav";
 import { NavLink } from "react-router-dom";
@@ -30,19 +30,21 @@ export function NavbarDefault() {
   }, []);
   
   return (
-    <div className="sticky top-0 lg:px-8 z-10 mx-auto max-w-screen-xl py-6 ">
-      <div className="container mx-auto bg-transparent flex items-center justify-between text-blue-gray-900">
+    <div className="sticky top-0 lg:px-12 z-10 mx-auto max-w-screen-lg py-6 ">
+      <div className="container mx-auto bg-transparent flex items-center justify-between text-blue-gray-900 px-10">
 
-        <div className='bg-white shadow-md rounded-full w-16 h-16 flex items-center justify-around'>
+        <div className='bg-white shadow-md rounded-full w-14 h-14 flex items-center justify-around'>
+          <button>
           <Avatar src={currentImage} onClick={handleClick} alt="avatar" />
+          </button>
         </div>
 
-        <div className= "rounded-full shadow-md lg:items-center lg:justify-around h-16 hidden lg:flex bg-white">
+        <div className= "rounded-full shadow-md lg:items-center lg:justify-around h-14 hidden lg:flex bg-white">
           <LinkNav linkName={''} title={'Home'}></LinkNav>
           <LinkNav linkName={'about'} title={'About'}></LinkNav>
         </div>
 
-        <div className= "rounded-full shadow-md lg:items-center lg:justify-around w-16 h-16 hidden lg:flex bg-white">
+        <div className= "rounded-full shadow-md lg:items-center lg:justify-around w-14 h-14 hidden lg:flex bg-white">
         <NavLink 
           className='nav-link'
           to={"/contact"}>
@@ -88,7 +90,7 @@ export function NavbarDefault() {
           )}
         </IconButton>
       </div>
-      <MobileNav open={openNav}>
+      <Collapse open={openNav}>
         <div className="bg-white rounded-xl mr-16 w-64 float-right">
           <NavLink className={({ isActive }) => (isActive ? 'text-gray-700' : 'text-gray-400')} to={"/"}>
                 <p className='text-left font-sans p-2 text-xl  tracking-wide'>Home</p>
@@ -100,7 +102,7 @@ export function NavbarDefault() {
                 <p className='text-left font-sans p-2 text-xl  tracking-wide'>Contact</p>
           </NavLink>
         </div>
-      </MobileNav>
+      </Collapse>
     </div>
   );
 }

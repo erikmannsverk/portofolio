@@ -8,7 +8,7 @@ interface LinkNavProps {
 
 function LinkNav({linkName, title}:LinkNavProps){
     return(
-        <div className='w-32 h-8'>
+        <div className='w-28 h-8'>
             <NavLink 
                 className={({ isActive }) => (isActive ? 'text-gray-700' : 'text-gray-500')}
                 to={"/"+linkName}>
