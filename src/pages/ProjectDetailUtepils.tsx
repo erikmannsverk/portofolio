@@ -25,7 +25,7 @@ function ProjectDetailUtepils() {
                 </div>
 
                 <div className="relative max-w-5xl mx-auto border-t border-blue-gray-100 pt-4">
-                    <div className="flex justify-end">
+                    <div className="flex justify-end py-2">
                         <Typography as="a" target="_blank" href="https://github.com/erikmannsverk/Utepils" className="opacity-80 transition-opacity hover:opacity-100">
                             <button className="bg-blue-500 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded">
                                 GitHub

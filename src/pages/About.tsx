@@ -26,7 +26,8 @@ function About() {
 
         <div className="w-full text-start mx-auto">
           <h1 className="block lg:text-3xl font-bold text-gray-800 md:text-xl text-lg dark:text-white">Hi Again <span className="text-blue-600">.</span></h1>
-          <p className="mt-3 lg:text-lg text-base text-gray-800 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor vestibulum magna, at posuere augue tempus nec. Motivated and dedicated student who has always had a passion for understand- ing how things work. I am currently working part-time as a full-stack developer, with experience in both frontend and backend development.
+          <p className="mt-3 lg:text-lg text-base text-gray-800 dark:text-gray-400">Motivated and dedicated student who has always had a passion for understanding how things work. I am currently working part-time as a full-stack developer, with experience in both frontend and backend development.</p>
+          <p className="mt-3 lg:text-lg text-base text-gray-800 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor vestibulum magna, at posuere augue tempus nec. 
 Vestibulum convallis lectus vitae ligula tempus, eu laoreet purus lacinia. Sed auctor pharetra enim, sit amet pharetra libero mattis id. Quisque euismod elit at lectus lacinia, non varius turpis euismod. Fusce commodo nulla ac arcu scelerisque, nec rhoncus justo ultricies. Curabitur efficitur nibh eget dolor hendrerit, sed posuere velit tristique. Nulla facilisi. Nullam eu urna vel arcu facilisis elementum. Aliquam in consectetur nulla. Vivamus tristique tincidunt felis, in dictum odio. Suspendisse vitae sapien vitae libero lobortis feugiat.</p>
         </div>
         
