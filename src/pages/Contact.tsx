@@ -13,7 +13,17 @@ function Contact() {
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
               Not working yet.
             </p>
+            <div className="flex justify-center mt-5">
+            <a target="_blank" href="https://github.com/erikmannsverk/portofolio" className="opacity-60 hover:scale-105 hover:opacity-80 ease-in-out duration-300">
+              <img src="/images/github.png" className="mx-2 md:h-5 md:w-5 lg:h-6 lg:w-6 h-4 w-4"></img>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/erik-mannsverk/" className="opacity-60 hover:scale-105 hover:opacity-80 ease-in-out duration-300">
+              <img src="/images/linkedin.png" className="mx-2 md:h-5 md:w-5 lg:h-6 lg:w-6 h-4 w-4"></img>
+            </a>
           </div>
+          </div>
+
+      
 
           <div className="lg:w-1/2 w-2/3 mx-auto">
             <div className="flex flex-wrap -m-2">

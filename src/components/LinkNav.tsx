@@ -12,7 +12,7 @@ function LinkNav({linkName, title}:LinkNavProps){
             <NavLink 
                 className={({ isActive }) => (isActive ? 'text-gray-700' : 'text-gray-500')}
                 to={"/"+linkName}>
-                    <p className='text-center items-center font-sans text-xl  tracking-wide'>
+                    <p className='text-center items-center font-sans text-xl tracking-wide'>
                     {title}
                     </p>
             </NavLink>

@@ -29,7 +29,7 @@ export function HorizontalCard({project}: ProjectsProps) {
     return (
         <NavLink className='nav-link' to={`/${project.title}`}>
             <div className="my-32 lg:h-1/4 h-1/3 flex justify-center">
-            <Card className="w-full bg-blue-gray-50 shadow-none w-90% lg:flex-row flex-col rounded-3xl hover:transform hover:shadow-lg hover:scale-105 transition ease-in-out duration-500">
+            <Card className="w-full bg-blue-gray-50 shadow-none w-90% lg:flex-row flex-col rounded-3xl hover:transform hover:shadow-lg hover:scale-105 transition ease-in-out duration-700">
                 <div className="lg:w-1/2 lg:h-full sm:h-1/2 lg:pt-8 overflow-hidden items-center px-2  shrink-0">
                     <img
                         src={`images/${project.img}`}
