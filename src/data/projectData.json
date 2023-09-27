@@ -1,0 +1,30 @@
+
+[
+    {
+        "id": 1,
+        "title": "Utepils",
+        "category": "MOBILE",
+        "role": "Developer",
+        "year": "2020",
+        "description": "Beer based on weather data",
+        "img": "mock_liten.png",
+        "mock1": "mock.png",
+        "mock2": "mock2_utepils.png",
+        "techstack": ["Kotlin", "Android Studio", "Jetpack Compose", "Figma", "Jira"],
+        "link": "https://github.com/erikmannsverk/Utepils"
+
+    },
+    {
+        "id": 2,
+        "title": "Cannibal",
+        "category": "WEB",
+        "role": "Full Stack Developer",
+        "year": "2023",
+        "description": "Description of Project 1",
+        "img": "can.png",
+        "mock1": "mock.png",
+        "mock2": "mock2.png",
+        "techstack": ["React", "JavaScript", "CSS", "HTML", "Firebase"],
+        "link": "https://cannibal.no/"
+    }
+]
