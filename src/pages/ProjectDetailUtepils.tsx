@@ -3,9 +3,30 @@ import Footer from '../components/Footer';
 import ScrollToTop from '../assets/ScrollToTop';
 import { Typography } from '@material-tailwind/react';
 
+const languages = [
+    {
+        "id": 1,
+        "img": "/images/languages/kotlin.png",
+        "name": "Kotlin"
+    },
+    {
+        "id": 2,
+        "img": "/images/languages/jetpack.png",
+        "name": "Jetpack Compose"
+    },
+    {
+        "id": 3,
+        "img": "/images/languages/figma.png",
+        "name": "Figma"
+    },
+    {
+        "id": 4,
+        "img": "/images/languages/android.png",
+        "name": "Android"
+    }
+]
+
 function ProjectDetailUtepils() {
-
-
 
     return (
         <>
@@ -18,16 +39,24 @@ function ProjectDetailUtepils() {
                 <h1 className="block lg:text-5xl font-bold text-gray-800 md:text-4xl text-3xl dark:text-white">Utepils<span className="text-blue-600"> .</span></h1>
                 <p className="mt-3 lg:text-lg text-sm text-gray-800 dark:text-gray-400">Beer/drink tips based on weather data</p>
                 </div>
-
+                {/*
                 <div className='flex justify-between max-w-5xl mx-auto pt-10'>
                     <p className="mt-5 uppercase font-bold lg:text-sm text-xs text-blue-500">Mobile</p>
                     <p className="mt-5 uppercase font-bold lg:text-sm text-xs text-gray-800">2022</p>
                 </div>
+                */}
 
-                <div className="relative max-w-5xl mx-auto border-t border-blue-gray-100 pt-4">
-                    <div className="flex justify-end py-2">
+                <div className="relative max-w-5xl mx-auto border-t border-blue-gray-100 mt-20 pt-2">
+                    <div className="flex justify-between py-2 h-14">
+                        <div className='flex h-full'>
+                            {languages.map((item, index)=> (
+                                <div className="group">
+                                    <img key={index} src={item.img} className='h-full w-full pr-10 opacity-90 transition-opacity hover:opacity-100'></img>
+                                </div>
+                            ))}
+                        </div>
                         <Typography as="a" target="_blank" href="https://github.com/erikmannsverk/Utepils" className="opacity-80 transition-opacity hover:opacity-100">
-                            <button className="bg-blue-500 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded">
+                            <button className="bg-blue-500 h-full hover:bg-blue-600 text-white font-bold  px-4 rounded">
                                 GitHub
                             </button>
                         </Typography>
@@ -44,7 +73,6 @@ function ProjectDetailUtepils() {
                     </div>
 
                     <p className="my-3 text-lg text-gray-800 dark:text-gray-400">The app also reccomends drinks and beers based on the current weather. The weather data is from the MET api.</p>
-
                 </div>
             </div>
         </div>

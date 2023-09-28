@@ -34,7 +34,7 @@ export function NavbarDefault() {
       <div className="container mx-auto bg-transparent flex items-center justify-between text-blue-gray-900 px-10">
 
         <div className='bg-white shadow-md rounded-full w-14 h-14 flex items-center justify-around'>
-          <button>
+          <button className="">
           <Avatar src={currentImage} onClick={handleClick} alt="avatar" />
           </button>
         </div>

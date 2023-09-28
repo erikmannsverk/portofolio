@@ -3,9 +3,25 @@ import Footer from '../components/Footer';
 import ScrollToTop from '../assets/ScrollToTop';
 import { Typography } from '@material-tailwind/react';
 
+const languages = [
+    {
+        "id": 1,
+        "img": "/images/languages/react.png",
+        "name": "Kotlin"
+    },
+    {
+        "id": 2,
+        "img": "/images/languages/firebase.png",
+        "name": "Jetpack Compose"
+    },
+    {
+        "id": 3,
+        "img": "/images/languages/html.png",
+        "name": "Figma"
+    }
+]
+
 function ProjectDetailCannibal() {
-
-
 
     return (
         <>
@@ -19,19 +35,17 @@ function ProjectDetailCannibal() {
                 <p className="mt-3 text-lg text-gray-800 dark:text-gray-400">User authentication backend with Firebase and React</p>
                 </div>
 
-                <div className="mt-10 relative max-w-5xl mx-auto">
-                
-                <div className='flex justify-between max-w-5xl mx-auto pt-10'>
-                    <Typography variant="h6" className="uppercase text-blue-500">
-                    WEB
-                    </Typography>
-                    <Typography variant="h6" className="uppercase text-gray-800">
-                    2023
-                    </Typography>
-                </div>
+                <div className="mt-20 relative max-w-5xl mx-auto">
                 
                 <div className='relative max-w-5xl mx-auto border-t border-blue-gray-100 pt-4'>
-                    <div className="flex justify-end py-2">
+                    <div className="flex justify-between py-2 mb-10 h-14">
+                        <div className='flex h-full'>
+                            {languages.map((item, index)=> (
+                                <div className="group">
+                                    <img key={index} src={item.img} className='h-full w-full pr-10 opacity-90 transition-opacity hover:opacity-100'></img>
+                                </div>
+                            ))}
+                        </div>
                         <Typography as="a" target="_blank" href="https://cannibal.no/" className="opacity-80 transition-opacity hover:opacity-100">
                             <button className="bg-blue-500 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded">
                                 Link

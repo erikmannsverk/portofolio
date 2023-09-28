@@ -13,7 +13,7 @@ function About() {
 
         <div className="pt-4">
           <img
-              src="/images/about.png"
+              src="/images/about-min.png"
               alt="Transparent Image"
               className="h-full w-full object-cover  rounded-3xl"
           />
