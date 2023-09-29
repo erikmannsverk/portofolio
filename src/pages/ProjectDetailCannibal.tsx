@@ -39,11 +39,10 @@ function ProjectDetailCannibal() {
                 
                 <div className='relative max-w-5xl mx-auto border-t border-blue-gray-100 pt-4'>
                     <div className="flex justify-between py-2 mb-10 h-14">
-                        <div className='flex h-full'>
+
+                        <div className='flex justify-between lg:w-1/4 w-1/3'>
                             {languages.map((item, index)=> (
-                                <div className="group">
-                                    <img key={index} src={item.img} className='h-full w-full pr-10 opacity-90 transition-opacity hover:opacity-100'></img>
-                                </div>
+                                <img key={index} src={item.img} className='h-full opacity-90 transition-opacity hover:opacity-100'></img>
                             ))}
                         </div>
                         <Typography as="a" target="_blank" href="https://cannibal.no/" className="opacity-80 transition-opacity hover:opacity-100">

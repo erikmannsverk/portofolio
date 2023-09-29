@@ -32,7 +32,6 @@ function ProjectDetailUtepils() {
         <>
         <ScrollToTop/>
         <NavbarDefault/>
-          
         <div className="relative overflow-hidden">
             <div className="max-w-[85rem] mx-auto px-4 lg:px-8 py-36">
                 <div className="max-w-2xl text-center mx-auto">
@@ -47,12 +46,10 @@ function ProjectDetailUtepils() {
                 */}
 
                 <div className="relative max-w-5xl mx-auto border-t border-blue-gray-100 mt-20 pt-2">
-                    <div className="flex justify-between py-2 h-14">
-                        <div className='flex h-full'>
+                    <div className="flex justify-between py-2 h-12">
+                        <div className='flex justify-between lg:w-1/4 w-1/3'>
                             {languages.map((item, index)=> (
-                                <div className="group">
-                                    <img key={index} src={item.img} className='h-full w-full pr-10 opacity-90 transition-opacity hover:opacity-100'></img>
-                                </div>
+                                <img key={index} src={item.img} className='h-full opacity-90 transition-opacity hover:opacity-100'></img>
                             ))}
                         </div>
                         <Typography as="a" target="_blank" href="https://github.com/erikmannsverk/Utepils" className="opacity-80 transition-opacity hover:opacity-100">
