@@ -9,9 +9,9 @@ function Contact() {
       <ScrollToTop/>
       <NavbarDefault/>
           <div className="flex flex-col text-center w-full mb-12 py-24">
-            <h1 className="block text-3xl font-bold text-gray-800 sm:text-4xl md:text-5xl dark:text-white">Contact Me <span className="text-blue-600">.</span></h1>
-            <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-              Not working yet.
+            <h1 className="block lg:text-5xl my-2 font-bold text-gray-800 text-3xl dark:text-white">Contact Me <span className="text-blue-600">.</span></h1>
+            <p className="lg:w-1/3 w-2/3 text-sm mx-auto leading-relaxed lg:text-base">
+              Please contact me directly at mannsverkerik@gmail.com or through this form. Form not working yet.
             </p>
             <div className="flex justify-center mt-5">
             <a target="_blank" href="https://github.com/erikmannsverk/portofolio" className="opacity-60 hover:scale-105 hover:opacity-80 ease-in-out duration-300">
