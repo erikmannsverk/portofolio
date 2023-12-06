@@ -5,7 +5,15 @@ import projectData from "../data/projectData.json"
 import { NavbarDefault } from "../components/NavbarDefault"
 import Footer from "../components/Footer"
 
+import { hotjar } from 'react-hotjar'
+import { useEffect } from 'react'
+
 function Home() {
+
+  useEffect(() => {
+    hotjar.initialize(3780129, 6)
+  }, [])
+
   return (
     <>
     <NavbarDefault/>
